@@ -1,3 +1,4 @@
+//function that uses the datetime package in order to display time on app - this function takes in the timestamp of the API.
 function formatDate(timestamp){
     let date = new Date(timestamp);
     let hours = date.getHours();
@@ -15,6 +16,7 @@ function formatDate(timestamp){
     return `${day} ${hours}:${minutes}`
 }
 
+// function incorporating openweathermap API - this function grabs information and updates the app visual information.
 function displayTemperature(response){
     console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");

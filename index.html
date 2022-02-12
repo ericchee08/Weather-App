@@ -19,12 +19,18 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+
+          <!-- Main information CITY, UPDATE, DESCRIPTION -->
           <h1 id="city"></h1>
           <ul>
             <li >Last updated:  <span id="date"></span></li>
             <li id="description">Clear</li>
           </ul>
+          
+          <!-- Second layer grid, with two columns -->
           <div class="row">
+            
+            <!-- Left-hand column consists of weather image and temperature-->
             <div class="col-6">
               <div class="weather-temperature">
                 <img
@@ -35,6 +41,8 @@
                 ><span class="units">°C | <a href="">°F</a> </span>
               </div>
             </div>
+
+            <!-- Right-hand column consists of additional info: humidity and wind -->
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
@@ -43,6 +51,7 @@
             </div>
           </div>
         </div>
+        <!-- Footer  -->
         <small> <a href="">Open-source</a> code by Eric Chee </small>
       </div>
     </div>
